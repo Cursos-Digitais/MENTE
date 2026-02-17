@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.5, user-scalable=yes">
+    <title>Reprograme Sua Mente em 30 Dias | Controle Emocional e Clareza Mental</title>
+    <meta name="description" content="Reprograme sua mente em 30 dias e reduza ansiedade, fortaleça autoestima e encontre seu propósito com apenas 5 minutos por dia.">
+
+    <!-- Meta Pixel Code -->
+    <script>
+        !function(f,b,e,v,n,t,s)
+        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+        n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t,s)}(window, document,'script',
+        'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1332161722010445');
+        fbq('track', 'PageView');
+    </script>
+    <noscript>
+        <img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=1332161722010445&ev=PageView&noscript=1"/>
+    </noscript>
+    <!-- End Meta Pixel Code -->
+
+    <!-- Google Fonts & Font Awesome (ícones gratuitos) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9fafc;
+            color: #1e2b37;
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            font-weight: 600;
+            line-height: 1.3;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 40px 0;
+        }
+
+        section {
+            padding: 30px 0;
+        }
+
+        /* seções alternadas */
+        section:nth-child(even) {
+            background-color: #ffffff;
+        }
+        section:nth-child(odd) {
+            background-color: #f4f7fc;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #2ecc71;
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(46, 204, 113, 0.3);
+            border: none;
+            cursor: pointer;
+            margin: 15px 0;
+            letter-spacing: 0.5px;
+        }
+
+        .btn:hover {
+            background-color: #27ae60;
+            transform: scale(1.02);
+            box-shadow: 0 15px 25px rgba(46, 204, 113, 0.4);
+        }
+
+        .btn-small {
+            font-size: 1rem;
+            padding: 12px 30px;
+        }
+
+        .headline {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #0b1c2b;
+        }
+
+        .subheadline {
+            font-size: 1.3rem;
+            font-weight: 300;
+            color: #2c3e50;
+            max-width: 800px;
+            margin: 0 auto 30px;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        .grid-2, .grid-3 {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: white;
+            border-radius: 20px;
+            padding: 30px 20px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: 0.2s;
+        }
+        .card:hover {
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+        }
+
+        .icone {
+            font-size: 2.5rem;
+            color: #2ecc71;
+            margin-bottom: 15px;
+        }
+
+        .depoimento-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            text-align: left;
+            font-style: italic;
+            border-left: 5px solid #2ecc71;
+        }
+
+        .depoimento-card .autor {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            margin-top: 15px;
+            font-style: normal;
+            font-weight: 500;
+        }
+
+        .autor i {
+            font-size: 2.2rem;
+            color: #2ecc71;
+        }
+
+        .faq-item {
+            border-bottom: 1px solid #ddd;
+            padding: 20px 0;
+        }
+
+        .faq-item h4 {
+            font-weight: 600;
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #1e2b37;
+        }
+
+        .faq-item p {
+            color: #4a5a6a;
+            display: none;
+            padding-top: 10px;
+        }
+
+        .faq-item.active p {
+            display: block;
+        }
+
+        .faq-item h4 i {
+            margin-right: 10px;
+            color: #2ecc71;
+            font-size: 1.2rem;
+            transition: 0.2s;
+        }
+
+        .price-box {
+            background: #0b1c2b;
+            color: white;
+            border-radius: 30px;
+            padding: 30px;
+            max-width: 400px;
+            margin: 30px auto;
+        }
+
+        .price-box .old-price {
+            font-size: 1.3rem;
+            text-decoration: line-through;
+            opacity: 0.7;
+        }
+
+        .price-box .new-price {
+            font-size: 3.5rem;
+            font-weight: 700;
+            color: #2ecc71;
+            line-height: 1;
+        }
+
+        .garantia {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            background: #e8f5e9;
+            border-radius: 20px;
+            padding: 30px;
+            margin-top: 30px;
+        }
+
+        .garantia i {
+            font-size: 4rem;
+            color: #2ecc71;
+        }
+
+        .escassez {
+            background: #fee9e7;
+            border-radius: 40px;
+            padding: 15px 25px;
+            display: inline-block;
+            font-weight: 600;
+            color: #c0392b;
+            margin: 15px 0;
+        }
+
+        footer {
+            background: #1e2b37;
+            color: #b0c4d9;
+            padding: 40px 0;
+            font-size: 0.9rem;
+            text-align: center;
+        }
+
+        /* responsivo */
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            .headline {
+                font-size: 3rem;
+            }
+        }
+
+        /* contador de estoque simbólico (js) */
+        .stock {
+            font-weight: 600;
+            color: #e67e22;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- HEADER / HERO -->
+    <section style="padding: 20px 0 10px;">
+        <div class="container text-center">
+            <h1 class="headline">Chega de ansiedade e autossabotagem: <br> reprograme sua mente em 30 dias</h1>
+            <p class="subheadline">Descubra o método passo a passo para silenciar a mente barulhenta, elevar sua autoestima e viver com propósito — mesmo se você se sente perdido hoje.</p>
+            <a href="#oferta" class="btn">Quero Reprogramar Minha Mente Agora</a>
+            <p><i class="fas fa-check-circle" style="color:#2ecc71;"></i> +2.500 pessoas já transformaram suas vidas</p>
+        </div>
+    </section>
+
+    <!-- DOR (identificação) -->
+    <section>
+        <div class="container text-center">
+            <h2 style="font-size: 2rem; margin-bottom: 20px;">Você se sente assim?</h2>
+            <div class="grid-2" style="text-align: left; max-width: 800px; margin: 0 auto;">
+                <div>
+                    <p><i class="fas fa-brain icone"></i> <strong>Mente acelerada 24/7</strong> — pensamentos que não param, insônia e preocupação constante.</p>
+                    <p><i class="fas fa-heart-broken icone"></i> <strong>Autoestima no chão</strong> — insegurança, se compara o tempo todo, se sente insuficiente.</p>
+                </div>
+                <div>
+                    <p><i class="fas fa-compass icone"></i> <strong>Sem propósito</strong> — sensação de estar perdido, sem direção, apenas sobrevivendo.</p>
+                    <p><i class="fas fa-battery-empty icone"></i> <strong>Cansaço emocional</strong> — falta de energia, motivação zero, irritação fácil.</p>
+                </div>
+            </div>
+            <p style="margin-top: 30px; font-size: 1.3rem;">A boa notícia: <strong>isso não é para sempre.</strong></p>
+        </div>
+    </section>
+
+    <!-- TRANSFORMAÇÃO (benefícios emocionais) -->
+    <section>
+        <div class="container text-center">
+            <h2 style="font-size: 2rem;">Imagine sua vida daqui 30 dias...</h2>
+            <div class="grid-3" style="margin-top: 40px;">
+                <div class="card">
+                    <i class="fas fa-feather-alt icone"></i>
+                    <h3>Mente em paz</h3>
+                    <p>Acordar sem aquele aperto no peito, pensamentos organizados, foco no que importa.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-smile icone"></i>
+                    <h3>Autoestima forte</h3>
+                    <p>Olhar no espelho e gostar de quem você vê. Decisões com confiança.</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-bullseye icone"></i>
+                    <h3>Clareza e propósito</h3>
+                    <p>Saber exatamente o que te move, acordar motivado e com energia.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMO FUNCIONA (30 dias / 5 min) -->
+    <section>
+        <div class="container text-center">
+            <h2>Como funciona o método</h2>
+            <p style="max-width: 700px; margin: 10px auto;">Você recebe o ebook e começa hoje mesmo. São apenas 5 minutinhos por dia.</p>
+            <div class="grid-3" style="margin: 40px 0;">
+                <div>
+                    <span style="background:#2ecc71; color:white; width:50px; height:50px; display:inline-block; line-height:50px; border-radius:50%; font-weight:700; font-size:1.5rem;">1</span>
+                    <h3>Leia um capítulo</h3>
+                    <p>Um conteúdo curto e direto por dia, sem sobrecarga.</p>
+                </div>
+                <div>
+                    <span style="background:#2ecc71; color:white; width:50px; height:50px; display:inline-block; line-height:50px; border-radius:50%; font-weight:700; font-size:1.5rem;">2</span>
+                    <h3>Faça o exercício</h3>
+                    <p>Práticas rápidas de reflexão e ação (3-5 minutos).</p>
+                </div>
+                <div>
+                    <span style="background:#2ecc71; color:white; width:50px; height:50px; display:inline-block; line-height:50px; border-radius:50%; font-weight:700; font-size:1.5rem;">3</span>
+                    <h3>Responda à autoanálise</h3>
+                    <p>Questões profundas para fixar a mudança.</p>
+                </div>
+            </div>
+            <p>✅ 30 dias de transformação comprovada, sem enrolação.</p>
+        </div>
+    </section>
+
+    <!-- BENEFÍCIOS OBJETIVOS -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">O que você leva com esse ebook</h2>
+            <div class="grid-2" style="margin-top: 30px;">
+                <ul style="list-style: none;">
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Técnicas para silenciar a mente em minutos</li>
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Como construir autoestima à prova de rejeição</li>
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Ferramentas para parar de se comparar</li>
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> O passo a passo para descobrir seu propósito</li>
+                </ul>
+                <ul style="list-style: none;">
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Controle emocional mesmo em dias difíceis</li>
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Como criar hábitos leves que duram</li>
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Libertar-se de crenças limitantes</li>
+                    <li><i class="fas fa-check-circle" style="color:#2ecc71;"></i> Clareza para tomar decisões alinhadas</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- DEPOIMENTOS FICTÍCIOS -->
+    <section>
+        <div class="container">
+            <h2 class="text-center">Quem já viveu essa virada</h2>
+            <div class="grid-3">
+                <div class="depoimento-card">
+                    <i class="fas fa-quote-left" style="color:#2ecc71; opacity:0.5; font-size:1.5rem;"></i>
+                    <p>“Em 15 dias já senti minha ansiedade reduzir. Hoje durmo melhor e me sinto mais segura. Valeu cada centavo.”</p>
+                    <div class="autor">
+                        <i class="fas fa-user-circle"></i>
+                        <span><strong>Camila R.</strong> - 32 anos</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <i class="fas fa-quote-left" style="color:#2ecc71; opacity:0.5; font-size:1.5rem;"></i>
+                    <p>“Achei que precisava de terapia cara, mas esse ebook me deu ferramentas práticas. Minha autoestima nunca esteve tão alta.”</p>
+                    <div class="autor">
+                        <i class="fas fa-user-circle"></i>
+                        <span><strong>João M.</strong> - 28 anos</span>
+                    </div>
+                </div>
+                <div class="depoimento-card">
+                    <i class="fas fa-quote-left" style="color:#2ecc71; opacity:0.5; font-size:1.5rem;"></i>
+                    <p>“Descobri meu propósito depois de anos perdido. Hoje acordo motivado. Simplesmente transformador.”</p>
+                    <div class="autor">
+                        <i class="fas fa-user-circle"></i>
+                        <span><strong>Luciana S.</strong> - 41 anos</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GARANTIA DE 7 DIAS -->
+    <section>
+        <div class="container">
+            <div class="garantia">
+                <i class="fas fa-shield-alt"></i>
+                <div>
+                    <h3 style="font-size: 2rem;">Garantia incondicional de 7 dias</h3>
+                    <p>Você tem 7 dias para testar o método. Se não sentir melhora na ansiedade, autoestima ou clareza, devolvemos 100% do seu dinheiro. Sem perguntas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA COM ESCASSEZ / PREÇO -->
+    <section id="oferta">
+        <div class="container text-center">
+            <span class="escassez"><i class="fas fa-hourglass-half"></i> Oferta por tempo limitado</span>
+            <div class="price-box">
+                <p class="old-price">De R$ 47,00</p>
+                <p class="new-price">R$ 15,90</p>
+                <p style="margin: 10px 0;">à vista ou em até 12x</p>
+                <span class="stock" id="stockCounter">⚡ Últimas 18 unidades com esse desconto</span>
+            </div>
+            <a href="https://checkout.com/seu-link" class="btn btn-small" style="font-size: 1.5rem; padding: 20px 60px;">Quero Reprogramar Minha Mente Agora</a>
+            <p style="margin-top: 10px;"><i class="fas fa-lock"></i> Pagamento 100% seguro</p>
+        </div>
+    </section>
+
+    <!-- FAQ (5 perguntas) -->
+    <section>
+        <div class="container" style="max-width: 800px;">
+            <h2 class="text-center">Dúvidas frequentes</h2>
+            <div class="faq-item active" onclick="toggleFaq(this)">
+                <h4><i class="fas fa-chevron-down"></i> O ebook é indicado para quem já faz terapia?</h4>
+                <p>Sim! Ele complementa o processo. As técnicas são práticas e podem acelerar seus resultados, mas não substitui acompanhamento profissional se necessário.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <h4><i class="fas fa-chevron-down"></i> Quanto tempo leva para receber o material?</h4>
+                <p>Imediato! Após a confirmação do pagamento, você recebe o link de download por e-mail. Já começa a ler em poucos minutos.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <h4><i class="fas fa-chevron-down"></i> Funciona mesmo com apenas 5 minutos por dia?</h4>
+                <p>Sim. O segredo é a consistência. Cada capítulo é direto ao ponto + exercício rápido. O método foi criado para se encaixar na rotina mais corrida.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <h4><i class="fas fa-chevron-down"></i> E se eu não me adaptar ao método?</h4>
+                <p>Você tem 7 dias de garantia. Se não gostar, devolvemos 100% do dinheiro, sem burocracia. Risco zero.</p>
+            </div>
+            <div class="faq-item" onclick="toggleFaq(this)">
+                <h4><i class="fas fa-chevron-down"></i> O pagamento é seguro?</h4>
+                <p>Sim, utilizamos a maior plataforma de pagamentos do Brasil. Seus dados estão protegidos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- ÚLTIMA CHAMADA (URGÊNCIA) -->
+    <section>
+        <div class="container text-center">
+            <h2 style="font-size: 2.2rem;">Sua nova vida começa agora</h2>
+            <p style="font-size: 1.3rem; margin: 20px;">Não espere a ansiedade ou a baixa autoestima te paralisarem por mais tempo.</p>
+            <div class="escassez" style="background:#2ecc71; color:white;">⚡ Última chance — preço promocional</div>
+            <a href="#oferta" class="btn" style="margin-top: 20px;">Quero Reprogramar Minha Mente Agora</a>
+        </div>
+    </section>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <div class="container">
+            <p>© 2025 Reprograme Sua Mente. Todos os direitos reservados.</p>
+            <p style="margin-top: 10px;">Este produto não substitui acompanhamento médico ou psicológico. Resultados variam de pessoa para pessoa.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript simples (FAQ e contador de estoque dinâmico) -->
+    <script>
+        // FAQ toggle
+        function toggleFaq(element) {
+            element.classList.toggle('active');
+            let icon = element.querySelector('i');
+            if(icon) {
+                icon.classList.toggle('fa-chevron-down');
+                icon.classList.toggle('fa-chevron-up');
+            }
+        }
+
+        // contador de estoque decrescente (efeito de escassez)
+        window.onload = function() {
+            let stockSpan = document.getElementById('stockCounter');
+            if(stockSpan) {
+                let stock = 18;
+                setInterval(() => {
+                    if(stock > 5) {
+                        stock -= 1;
+                        stockSpan.innerText = `⚡ Últimas ${stock} unidades com esse desconto`;
+                    } else if(stock > 0) {
+                        stock -= 1;
+                        stockSpan.innerText = `⚡ Últimas ${stock} unidades com esse desconto`;
+                    } else {
+                        stockSpan.innerText = `⚡ Oferta esgotada (aguarde próxima turma)`;
+                    }
+                }, 60000); // diminui a cada 1 minuto (para simular)
+            }
+        };
+
+        // garantir que os ícones do FAQ iniciem com seta para baixo
+        document.querySelectorAll('.faq-item h4 i').forEach(icon => {
+            icon.className = 'fas fa-chevron-down';
+        });
+    </script>
+
+    <!-- Pequeno ajuste para dispositivos móveis -->
+    <style>
+        @media (max-width: 480px) {
+            .headline { font-size: 1.9rem; }
+            .btn { font-size: 1rem; padding: 15px 25px; }
+        }
+    </style>
+</body>
+</html>
