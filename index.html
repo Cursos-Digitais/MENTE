@@ -25,7 +25,7 @@
     </noscript>
     <!-- End Meta Pixel Code -->
 
-    <!-- Google Fonts & Font Awesome (ícones gratuitos) -->
+    <!-- Google Fonts & Font Awesome -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
@@ -43,6 +43,7 @@
             background-color: #f9fafc;
             color: #1e2b37;
             line-height: 1.6;
+            overflow-x: hidden;
         }
 
         h1, h2, h3 {
@@ -61,7 +62,6 @@
             padding: 30px 0;
         }
 
-        /* seções alternadas */
         section:nth-child(even) {
             background-color: #ffffff;
         }
@@ -240,6 +240,17 @@
             margin: 15px 0;
         }
 
+        .urgente {
+            background: #ffd700;
+            color: #1e2b37;
+            font-weight: 700;
+            padding: 12px 25px;
+            border-radius: 40px;
+            display: inline-block;
+            margin: 10px 0;
+            font-size: 1.1rem;
+        }
+
         footer {
             background: #1e2b37;
             color: #b0c4d9;
@@ -248,7 +259,29 @@
             text-align: center;
         }
 
-        /* responsivo */
+        /* seção dor aprofundada */
+        .dor-list {
+            text-align: left;
+            max-width: 700px;
+            margin: 0 auto;
+            background: #fff0f0;
+            padding: 30px 40px;
+            border-radius: 40px;
+            border-left: 8px solid #e74c3c;
+        }
+        .dor-list p {
+            margin: 20px 0;
+            font-size: 1.2rem;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+        .dor-list i {
+            color: #e74c3c;
+            font-size: 1.8rem;
+            width: 35px;
+        }
+
         @media (min-width: 768px) {
             .grid-2 {
                 grid-template-columns: repeat(2, 1fr);
@@ -257,11 +290,34 @@
                 grid-template-columns: repeat(3, 1fr);
             }
             .headline {
-                font-size: 3rem;
+                font-size: 3.2rem;
             }
         }
 
-        /* contador de estoque simbólico (js) */
+        @media (max-width: 480px) {
+            .headline {
+                font-size: 2rem;
+            }
+            .subheadline {
+                font-size: 1.1rem;
+            }
+            .btn {
+                font-size: 1rem;
+                padding: 15px 25px;
+                white-space: normal;
+                word-break: break-word;
+            }
+            .container {
+                padding: 25px 0;
+            }
+            .dor-list {
+                padding: 20px 15px;
+            }
+            .dor-list p {
+                font-size: 1rem;
+            }
+        }
+
         .stock {
             font-weight: 600;
             color: #e67e22;
@@ -270,31 +326,28 @@
 </head>
 <body>
 
-    <!-- HEADER / HERO -->
+    <!-- HEADER / HERO - NOVO MAIS IMPACTANTE -->
     <section style="padding: 20px 0 10px;">
         <div class="container text-center">
-            <h1 class="headline">Chega de ansiedade e autossabotagem: <br> reprograme sua mente em 30 dias</h1>
-            <p class="subheadline">Descubra o método passo a passo para silenciar a mente barulhenta, elevar sua autoestima e viver com propósito — mesmo se você se sente perdido hoje.</p>
+            <h1 class="headline">Sua mente está sabotando sua vida?<br>Descubra como recuperar o controle emocional em 30 dias.</h1>
+            <p class="subheadline">O método definitivo para silenciar a ansiedade, fortalecer sua autoestima e viver com propósito — mesmo se hoje você se sente perdido.</p>
             <a href="#oferta" class="btn">Quero Reprogramar Minha Mente Agora</a>
             <p><i class="fas fa-check-circle" style="color:#2ecc71;"></i> +2.500 pessoas já transformaram suas vidas</p>
         </div>
     </section>
 
-    <!-- DOR (identificação) -->
+    <!-- SEÇÃO DE DOR APROFUNDADA (NOVA) -->
     <section>
         <div class="container text-center">
-            <h2 style="font-size: 2rem; margin-bottom: 20px;">Você se sente assim?</h2>
-            <div class="grid-2" style="text-align: left; max-width: 800px; margin: 0 auto;">
-                <div>
-                    <p><i class="fas fa-brain icone"></i> <strong>Mente acelerada 24/7</strong> — pensamentos que não param, insônia e preocupação constante.</p>
-                    <p><i class="fas fa-heart-broken icone"></i> <strong>Autoestima no chão</strong> — insegurança, se compara o tempo todo, se sente insuficiente.</p>
-                </div>
-                <div>
-                    <p><i class="fas fa-compass icone"></i> <strong>Sem propósito</strong> — sensação de estar perdido, sem direção, apenas sobrevivendo.</p>
-                    <p><i class="fas fa-battery-empty icone"></i> <strong>Cansaço emocional</strong> — falta de energia, motivação zero, irritação fácil.</p>
-                </div>
+            <h2 style="font-size: 2rem; margin-bottom: 30px;">Talvez você esteja:</h2>
+            <div class="dor-list">
+                <p><i class="fas fa-brain"></i> <strong>Pensando demais</strong> antes de dormir, revivendo situações sem solução</p>
+                <p><i class="fas fa-balance-scale"></i> <strong>Se comparando o tempo todo</strong> nas redes sociais e se sentindo insuficiente</p>
+                <p><i class="fas fa-hourglass-half"></i> <strong>Se sentindo atrasado na vida</strong> — como se todos estivessem à sua frente</p>
+                <p><i class="fas fa-hand-paper"></i> <strong>Se sabotando</strong> mesmo sabendo exatamente o que precisa fazer</p>
+                <p><i class="fas fa-battery-quarter"></i> <strong>E isso está drenando sua energia</strong> todos os dias, te deixando exausto(a)</p>
             </div>
-            <p style="margin-top: 30px; font-size: 1.3rem;">A boa notícia: <strong>isso não é para sempre.</strong></p>
+            <p style="margin-top: 30px; font-size: 1.3rem;">Não é culpa sua, mas <strong>você pode mudar isso agora.</strong></p>
         </div>
     </section>
 
@@ -415,17 +468,20 @@
         </div>
     </section>
 
-    <!-- OFERTA COM ESCASSEZ / PREÇO -->
+    <!-- OFERTA COM ESCASSEZ / URGÊNCIA / PREÇO -->
     <section id="oferta">
         <div class="container text-center">
-            <span class="escassez"><i class="fas fa-hourglass-half"></i> Oferta por tempo limitado</span>
+            <!-- Gatilho de urgência -->
+            <span class="urgente"><i class="fas fa-clock"></i> Oferta por tempo limitado — valor promocional apenas hoje</span>
+            <span class="escassez" style="display: block; margin-top: 10px;"><i class="fas fa-fire"></i> Últimas 18 unidades com esse desconto</span>
+            
             <div class="price-box">
                 <p class="old-price">De R$ 47,00</p>
                 <p class="new-price">R$ 15,90</p>
                 <p style="margin: 10px 0;">à vista ou em até 12x</p>
-                <span class="stock" id="stockCounter">⚡ Últimas 18 unidades com esse desconto</span>
+                <span class="stock" id="stockCounter">⚡ Restam apenas 18 cópias com este preço</span>
             </div>
-            <a href="https://pay.lowify.com.br/checkout.php?product_id=VkX32M" class="btn btn-small" style="font-size: 1.5rem; padding: 20px 60px;">Quero Reprogramar Minha Mente Agora</a>
+            <a href="https://checkout.lowify.com.br/checkout.php?product_id=VkX32M" class="btn btn-small" style="font-size: 1.5rem; padding: 20px 60px;">Quero Reprogramar Minha Mente Agora</a>
             <p style="margin-top: 10px;"><i class="fas fa-lock"></i> Pagamento 100% seguro</p>
         </div>
     </section>
@@ -434,7 +490,7 @@
     <section>
         <div class="container" style="max-width: 800px;">
             <h2 class="text-center">Dúvidas frequentes</h2>
-            <div class="faq-item active" onclick="toggleFaq(this)">
+            <div class="faq-item" onclick="toggleFaq(this)">
                 <h4><i class="fas fa-chevron-down"></i> O ebook é indicado para quem já faz terapia?</h4>
                 <p>Sim! Ele complementa o processo. As técnicas são práticas e podem acelerar seus resultados, mas não substitui acompanhamento profissional se necessário.</p>
             </div>
@@ -470,14 +526,13 @@
     <!-- RODAPÉ -->
     <footer>
         <div class="container">
-            <p>© 2026 Reprograme Sua Mente. Todos os direitos reservados.</p>
+            <p>© 2025 Reprograme Sua Mente. Todos os direitos reservados.</p>
             <p style="margin-top: 10px;">Este produto não substitui acompanhamento médico ou psicológico. Resultados variam de pessoa para pessoa.</p>
         </div>
     </footer>
 
-    <!-- JavaScript simples (FAQ e contador de estoque dinâmico) -->
+    <!-- JavaScript simples (FAQ e contador de estoque) -->
     <script>
-        // FAQ toggle
         function toggleFaq(element) {
             element.classList.toggle('active');
             let icon = element.querySelector('i');
@@ -495,29 +550,21 @@
                 setInterval(() => {
                     if(stock > 5) {
                         stock -= 1;
-                        stockSpan.innerText = `⚡ Últimas ${stock} unidades com esse desconto`;
+                        stockSpan.innerText = `⚡ Restam apenas ${stock} cópias com este preço`;
                     } else if(stock > 0) {
                         stock -= 1;
-                        stockSpan.innerText = `⚡ Últimas ${stock} unidades com esse desconto`;
+                        stockSpan.innerText = `⚡ Últimas ${stock} unidades!`;
                     } else {
                         stockSpan.innerText = `⚡ Oferta esgotada (aguarde próxima turma)`;
                     }
-                }, 60000); // diminui a cada 1 minuto (para simular)
+                }, 60000);
             }
         };
 
-        // garantir que os ícones do FAQ iniciem com seta para baixo
+        // Inicializar ícones do FAQ
         document.querySelectorAll('.faq-item h4 i').forEach(icon => {
             icon.className = 'fas fa-chevron-down';
         });
     </script>
-
-    <!-- Pequeno ajuste para dispositivos móveis -->
-    <style>
-        @media (max-width: 480px) {
-            .headline { font-size: 1.9rem; }
-            .btn { font-size: 1rem; padding: 15px 25px; }
-        }
-    </style>
 </body>
 </html>
