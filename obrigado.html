@@ -2,7 +2,7 @@
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
     <title>Obrigado! Seu ebook está pronto</title>
     <meta name="robots" content="noindex, nofollow">
 
@@ -19,145 +19,166 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 20px;
+            padding: 12px;
         }
         .card-obrigado {
             max-width: 680px;
             width: 100%;
             background: white;
-            border-radius: 48px 48px 32px 32px;
-            box-shadow: 0 30px 60px rgba(0, 30, 20, 0.15);
+            border-radius: 40px 40px 28px 28px;
+            box-shadow: 0 20px 40px rgba(0, 30, 20, 0.15);
             overflow: hidden;
             text-align: center;
-            padding: 40px 30px 50px;
+            padding: 30px 20px 40px;
             border: 1px solid rgba(46, 204, 113, 0.15);
         }
         .check-icon {
             background: #2ecc71;
-            width: 90px;
-            height: 90px;
-            line-height: 90px;
+            width: 80px;
+            height: 80px;
+            line-height: 80px;
             border-radius: 50%;
-            margin: 0 auto 25px;
+            margin: 0 auto 20px;
             color: white;
-            font-size: 3.8rem;
-            box-shadow: 0 15px 25px rgba(46, 204, 113, 0.3);
+            font-size: 3rem;
+            box-shadow: 0 12px 20px rgba(46, 204, 113, 0.3);
         }
         h1 {
-            font-size: 2.4rem;
+            font-size: 2rem;
             font-weight: 700;
             color: #0b2b1f;
-            margin-bottom: 15px;
+            margin-bottom: 12px;
+            word-break: break-word;
         }
         .sub {
-            font-size: 1.2rem;
+            font-size: 1.1rem;
             color: #2c3e50;
-            margin-bottom: 35px;
+            margin-bottom: 30px;
             font-weight: 300;
             border-bottom: 2px dashed #cbd5e0;
-            padding-bottom: 25px;
+            padding-bottom: 20px;
+            word-break: break-word;
         }
         .download-area {
             background: #f8fafd;
-            border-radius: 40px;
-            padding: 35px 20px;
-            margin: 20px 0 25px;
+            border-radius: 30px;
+            padding: 25px 15px;
+            margin: 20px 0;
             border: 1px solid #e2e8f0;
+            word-break: break-word;
         }
         .drive-info {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 10px;
-            font-size: 1.3rem;
+            gap: 8px;
+            font-size: 1.2rem;
             color: #1e2b37;
-            margin-bottom: 25px;
+            margin-bottom: 20px;
             background: white;
-            padding: 12px 20px;
-            border-radius: 100px;
-            box-shadow: 0 5px 10px rgba(0,0,0,0.02);
+            padding: 10px 15px;
+            border-radius: 50px;
+            box-shadow: 0 3px 8px rgba(0,0,0,0.02);
+            flex-wrap: wrap;
         }
         .drive-info i {
             color: #2ecc71;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         .btn-download {
             display: inline-block;
             background: #2ecc71;
             color: white;
-            font-size: 1.5rem;
+            font-size: 1.4rem;
             font-weight: 700;
-            padding: 22px 45px;
-            border-radius: 60px;
+            padding: 18px 30px;
+            border-radius: 50px;
             text-decoration: none;
             letter-spacing: 0.5px;
-            box-shadow: 0 12px 25px rgba(46, 204, 113, 0.5);
+            box-shadow: 0 10px 20px rgba(46, 204, 113, 0.4);
             transition: 0.2s;
-            margin: 15px 0 10px;
+            margin: 12px 0 10px;
             border: none;
             width: 100%;
-            max-width: 450px;
+            max-width: 400px;
+            word-break: break-word;
+            white-space: normal;
         }
         .btn-download:hover {
             background: #27ae60;
-            transform: scale(1.02);
-            box-shadow: 0 18px 30px rgba(46, 204, 113, 0.6);
+            transform: scale(1.01);
+            box-shadow: 0 15px 25px rgba(46, 204, 113, 0.5);
         }
         .btn-download i {
-            margin-right: 12px;
+            margin-right: 10px;
         }
         .dica {
             background: #eef9f2;
-            border-radius: 30px;
-            padding: 20px;
-            margin: 30px 0;
+            border-radius: 24px;
+            padding: 18px 15px;
+            margin: 25px 0;
             text-align: left;
+            word-break: break-word;
         }
         .dica p {
             display: flex;
-            gap: 15px;
+            gap: 12px;
             align-items: flex-start;
-            margin: 12px 0;
-            font-size: 1rem;
+            margin: 10px 0;
+            font-size: 0.98rem;
             color: #1e3b2c;
+            line-height: 1.5;
         }
         .dica i {
             color: #2ecc71;
-            font-size: 1.4rem;
-            min-width: 28px;
+            font-size: 1.3rem;
+            min-width: 26px;
+            margin-top: 2px;
         }
         .email-alert {
             background: #fff9e6;
-            border-left: 6px solid #f1c40f;
-            padding: 18px 20px;
-            border-radius: 20px;
+            border-left: 5px solid #f1c40f;
+            padding: 16px 15px;
+            border-radius: 18px;
             text-align: left;
-            font-size: 0.98rem;
+            font-size: 0.95rem;
+            word-break: break-word;
+        }
+        .email-alert p {
+            display: flex;
+            align-items: flex-start;
+            gap: 12px;
         }
         .email-alert i {
             color: #f1c40f;
-            font-size: 1.5rem;
-            margin-right: 10px;
+            font-size: 1.4rem;
+            min-width: 30px;
         }
         .suporte {
-            margin-top: 35px;
+            margin-top: 30px;
             padding-top: 20px;
             border-top: 2px solid #e9ecef;
+            word-break: break-word;
         }
         .suporte a {
+            text-decoration: underline;
             color: #2ecc71;
             font-weight: 600;
-            text-decoration: none;
+            word-break: break-word;
         }
         footer {
-            margin-top: 30px;
+            margin-top: 25px;
             color: #7f8c8d;
-            font-size: 0.85rem;
+            font-size: 0.8rem;
+            word-break: break-word;
         }
-        @media (max-width: 480px) {
-            .card-obrigado { padding: 25px 20px; }
-            h1 { font-size: 1.9rem; }
-            .btn-download { font-size: 1.2rem; padding: 18px 30px; }
+        /* Ajustes para telas muito pequenas */
+        @media (max-width: 380px) {
+            .card-obrigado { padding: 20px 12px 30px; }
+            h1 { font-size: 1.7rem; }
+            .sub { font-size: 1rem; }
+            .btn-download { font-size: 1.2rem; padding: 15px 20px; }
+            .drive-info { font-size: 1rem; flex-direction: column; }
         }
     </style>
     <!-- Font Awesome (ícones) -->
@@ -187,7 +208,7 @@
                 <i class="fas fa-cloud-download-alt"></i> BAIXAR AGORA
             </a>
 
-            <p style="margin-top: 15px; font-size: 0.95rem;">
+            <p style="margin-top: 12px; font-size: 0.9rem; word-break: break-word;">
                 <i class="fas fa-copy" style="color:#2ecc71;"></i> 
                 Link alternativo: 
                 <a href="https://drive.google.com/file/d/1wyoD1X9qRXge-AHNzXF3lY3uXBhQhCdJ/view?usp=sharing" 
@@ -206,24 +227,24 @@
 
         <!-- Alerta de e-mail -->
         <div class="email-alert">
-            <p style="display: flex; align-items: center;">
+            <p>
                 <i class="fas fa-envelope-open-text"></i> 
                 <span><strong>Envio também por e-mail?</strong> Dentro de alguns minutos você receberá uma cópia do link no e-mail cadastrado. Se não achar, verifique a caixa de spam / promoções.</span>
             </p>
         </div>
 
-        <!-- Suporte -->
-<div class="suporte">
-    <i class="fab fa-whatsapp" style="color:#25D366; font-size: 2rem; margin-bottom: 8px; display: block;"></i>
-    <p>Precisou de ajuda?  
-        <a href="https://wa.me/5585987300842?text=Olá!%20Comprei%20o%20ebook%20e%20preciso%20de%20ajuda" 
-           target="_blank" 
-           style="text-decoration: underline; color: #2ecc71; font-weight: 600;">
-            85 98730-0842
-        </a>
-    </p>
-    <p style="font-size: 0.9rem; margin-top: 5px;">✅ Resposta rápida via WhatsApp (até 2h)</p>
-</div>
+        <!-- Suporte com WhatsApp sublinhado -->
+        <div class="suporte">
+            <i class="fab fa-whatsapp" style="color:#25D366; font-size: 2rem; margin-bottom: 8px; display: block;"></i>
+            <p>Precisou de ajuda?  
+                <a href="https://wa.me/5585987300842?text=Olá!%20Comprei%20o%20ebook%20e%20preciso%20de%20ajuda" 
+                   target="_blank" 
+                   style="text-decoration: underline; color: #2ecc71; font-weight: 600;">
+                    85 98730-0842
+                </a>
+            </p>
+            <p style="font-size: 0.9rem; margin-top: 5px;">✅ Resposta rápida via WhatsApp (até 2h)</p>
+        </div>
 
         <!-- Rodapé simples -->
         <footer>
