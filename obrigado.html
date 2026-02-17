@@ -6,25 +6,6 @@
     <title>Obrigado! Seu ebook está pronto</title>
     <meta name="robots" content="noindex, nofollow">
 
-    <!-- Meta Pixel Code (COMPRA) -->
-    <script>
-        !function(f,b,e,v,n,t,s)
-        {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-        n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-        if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-        n.queue=[];t=b.createElement(e);t.async=!0;
-        t.src=v;s=b.getElementsByTagName(e)[0];
-        s.parentNode.insertBefore(t,s)}(window, document,'script',
-        'https://connect.facebook.net/en_US/fbevents.js');
-        fbq('init', '1332161722010445');
-        fbq('track', 'Purchase', {value: 15.90, currency: 'BRL'});
-    </script>
-    <noscript>
-        <img height="1" width="1" style="display:none"
-            src="https://www.facebook.com/tr?id=1332161722010445&ev=Purchase&noscript=1"/>
-    </noscript>
-    <!-- End Meta Pixel Code -->
-
     <style>
         * {
             margin: 0;
@@ -202,8 +183,7 @@
             <!-- BOTÃO DE DOWNLOAD DIRETO -->
             <a href="https://drive.google.com/uc?export=download&id=1wyoD1X9qRXge-AHNzXF3lY3uXBhQhCdJ" 
                class="btn-download" 
-               target="_blank"
-               onclick="fbq('track', 'Lead');">
+               target="_blank">
                 <i class="fas fa-cloud-download-alt"></i> BAIXAR AGORA
             </a>
 
@@ -243,11 +223,5 @@
             <p>© 2025 Reprograme Sua Mente. Aproveite cada página 💚</p>
         </footer>
     </div>
-
-    <!-- script leve (opcional) -->
-    <script>
-        // (Opcional) rastrear clique no botão com FBQ, mas já colocamos onclick no link.
-        console.log('Página de obrigado carregada. Pixel de compra disparado.');
-    </script>
 </body>
 </html>
